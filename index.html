@@ -96,34 +96,34 @@
     z-index: 20;
     margin: auto;
     top: 80%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     font-family: "Lato", sans-serif;
+    justify-content: center;
 }
 
 .footer-menu .menu {
-    width: 700px;
-    height: 0;
+    width: 800px;
+    height: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     list-style: none;
     border-top: 2px solid whitesmoke;
-    margin: auto;
+    margin: 50px 0;
 }
 
 .footer-menu .menu-item {
     height: 100%;
-    margin: 0 10px;
 }
 
 .footer-menu .menu-link {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 0 40px;
+    margin: 10px 0px;
     padding: 10px 20px;
     color: whitesmoke;
     text-decoration: none;
@@ -132,21 +132,28 @@
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (max-height: 400px) {
+    .nome{
+        top: 40%;
+    }    
+    .autor {
+                font-size: 60px;
+          }
+    .job {
+        font-size: 20px;
+    }
+    
+    .footer-menu .menu {
+        margin: 0;
+    }
+        }
+
 .footer-menu .menu-link:hover {
     color: darkgrey;
 }
 
 
-footer {
-    position: absolute;
-    top: 90%;
-    padding: 2px;
-    color: whitesmoke;
-    font-family: 'Lato', sans-serif;
-    transform: translate(0%, 0%);
-    text-align: center;
-    width: 200px;
-}
+
 
 
     </style>
