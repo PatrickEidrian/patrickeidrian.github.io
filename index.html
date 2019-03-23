@@ -6,165 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=devide-height">
     <title></title>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Srisakdi:400,700');
-        @import url('https://fonts.googleapis.com/css?family=Pacifico');
-        @import url('https://fonts.googleapis.com/css?family=Lato: 400,700');
+       @import url('https://fonts.googleapis.com/css?family=Srisakdi:400,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Lato: 400,700');
 
-        ::after,
-        ::before,
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+::after, ::before, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        .flex-coluna {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-        }
+.flex-coluna {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-        .home .principal {
-            width: 100%;
-            height: 100vh;
-            position: relative;
-        }
+.home .principal {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
 
-        .home .principal {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            overflow: hidden;
-        }
+.home .principal {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
 
-        .img-bg {
-            background: url(joshua-aragon-1267601-unsplash.jpg);
-            background-size: 100% 100%;
-            height: 800px;
-            background-blend-mode: overlay;
-            filter: blur(3px);
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
+.img-bg {
+    background-image: linear-gradient(to left, #83a4d4, #00a1ff );
+    filter: blur(24px);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 
-        .nome {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            color: rgba(230, 230, 230);
-            transform: translate(-50%, -50%);
-        }
+.nome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgba(230, 230, 230);
+    transform: translate(-50%, -50%);
+    }
 
-        .autor {
-            font-size: 72px;
-            font-family: 'Pacifico', cursive;
-            font-weight: 400;
-            text-align: center;
-        }
+.autor {
+    font-size: 72px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
 
-        .job {
-            font-size: 28px;
-            font-family: 'Lato';
-            text-align: center;
-        }
+.job {
+    font-size: 28px;
+    font-family: 'Lato';
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.3);
+}
 
-        .sociais {
-            background-color: rgba(66, 66, 66, 0.1);
-            width: 70px;
-            position: absolute;
-            right: 0;
-            margin: 15px 5px;
-        }
+.sociais {
+    background-color: rgba(66, 66, 66, 0.1);
+    width: 50px;
+    position: absolute;
+    right: -1px;
+    margin: 15px 0px;
+}
 
 
-        .abas {
-            position: absolute;
-            top: 75%;
-            left: 50%;
-            transform: translate(-85%, -50%);
-        }
+.sociais .sociais-link {
+    transition: background 0.4s ease;
+    transition: border-radius 0.5s ease;
+}
 
-        .abas ul {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-        }
+.sociais .sociais-link:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
 
-        .abas ul li {
-            list-style-type: none;
-            display: inline;
-        }
+.footer-menu {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    z-index: 20;
+    margin: auto;
+    top: 80%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
 
-        .abas a {
-            text-decoration: none;
-            color: whitesmoke;
-            font-family: 'Lato', sans-serif;
-        }
+.footer-menu .menu {
+    width: 700px;
+    height: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    border-top: 2px solid whitesmoke;
+    margin: auto;
+}
 
-        .abas hr {
-            height: 5px;
-            background-color: black;
-            width: 100%;
-            position: absolute;
-        }
+.footer-menu .menu-item {
+    height: 100%;
+    margin: 0 10px;
+}
 
-        footer {
-            position: absolute;
-            top: 90%;
-            padding: 2px;
-            color: whitesmoke;
-            font-family: 'Lato', sans-serif;
-            transform: translate(0%, 0%);
-            text-align: center;
-            width: 200px;
-        }
+.footer-menu .menu-link {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 40px;
+    padding: 10px 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+    transition: color .7s ease;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.footer-menu .menu-link:hover {
+    color: darkgrey;
+}
+
+
+footer {
+    position: absolute;
+    top: 90%;
+    padding: 2px;
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    transform: translate(0%, 0%);
+    text-align: center;
+    width: 200px;
+}
+
 
     </style>
 </head>
 
 <body class="home">
-    <main class="principal">
-        <div class="container">
-
-
-            <div class="img-bg">
-            </div>
-            <div class="sociais flex-coluna">
-                <a href=""><img src="https://img.icons8.com/ios/50/ffffff/github-filled.png"></a>
-                <a href=""><img src="https://img.icons8.com/ios/50/ffffff/linkedin.png"></a>
-                <a href=""><img src="https://img.icons8.com/ios/50/ffffff/codepen-filled.png"></a>
-                <a href=""><img src="https://img.icons8.com/ios/50/ffffff/gmail-login.png"></a>
-            </div>
-            <div class="nome">
-                <p class="autor">Patrick Eidrian</p>
-                <p class="job">Desenvolvedor Front-end</p>
-            </div>
-
-
-        </div>
-        <div class="abas">
-            <ul>
-                <hr>
-                <li><a href=""> Projetos </a></li>
-                <li><a href=""> Sobre </a></li>
-                <li><a href=""> Curriculo </a></li>
-            </ul>
-
-
-        </div>
-    </main>
-
-    <footer>
-        <a style="background-color:black;color:white;text-decoration:none;padding:2px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:5px" href="https://unsplash.com/@goshua13?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Joshua Aragon"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
-                    <title>unsplash-logo</title>
-                    <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                </svg></span><span>Background image By Joshua Aragon</span></a>
-    </footer>
+   <main class="principal">    
+     <div class="container">
+     
+    
+      <div class="img-bg">
+      </div>
+    <div class="sociais flex-coluna">
+        <a class="sociais-link" href="https://github.com/PatrickEidrian" target="_blank"><img src="https://img.icons8.com/ios/50/ffffff/github-filled.png" alt="icone-github"></a>
+        <a class="sociais-link" href="https://www.linkedin.com/in/patrick-eidrian-643340162/" target="_blank"><img src="https://img.icons8.com/ios/50/ffffff/linkedin.png" alt="icone-linkedin"></a>
+        <a class="sociais-link" href="https://codepen.io/parickeidrian/#" target="_blank"><img src="https://img.icons8.com/ios/50/ffffff/codepen-filled.png" alt="codepen"></a>
+        <a class="sociais-link" href="patrickeidrian1@gmail.com" target="_blank"  ><img src="https://img.icons8.com/ios/50/ffffff/gmail-login.png"></a>
+    </div>  
+      <div class="nome">
+          <p class="autor">Patrick Eidrian</p>
+          <p class="job">Desenvolvedor Front-end</p>
+      </div>
+      
+      
+       </div>
+       <nav class="footer-menu">
+          <ul class="menu">
+          <li class="menu-item"><a class="menu-link" href=""> Projetos </a></li>
+          <li class="menu-item"><a class="menu-link" href=""> Sobre </a></li>
+          <li class="menu-item"><a class="menu-link" href=""> Curriculo </a></li>
+          </ul>
+      </nav>
+   </main>
+   
+   <footer>
+     
+   </footer>
     <script></script>
 </body>
-
 </html>
