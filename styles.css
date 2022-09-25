@@ -1,153 +1,151 @@
-@import url('https://fonts.googleapis.com/css?family=Srisakdi:400,700');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Lato: 400,700');
-
-::after, ::before, * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.flex-coluna {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.home .principal {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.home .principal {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    overflow: hidden;
-}
-
-.img-bg {
-    background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(105,173,212)),
-        color-stop(0.84, rgb(23,82,145))
-    );
-    filter: blur(24px);
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.nome {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: rgba(230, 230, 230);
-    transform: translate(-50%, -50%);
-    }
-
-.autor {
-    font-size: 72px;
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    text-align: center;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
-}
-
-.job {
-    font-size: 28px;
-    font-family: 'Lato';
-    text-align: center;
-    text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.3);
-}
-
-.sociais {
-    background-color: rgba(66, 66, 66, 0.1);
-    width: 50px;
-    position: absolute;
-    right: -1px;
-    margin: 15px 0px;
-}
-
-
-.sociais .sociais-link {
-    transition: background 0.4s ease;
-    transition: border-radius 0.5s ease;
-}
-
-.sociais .sociais-link:hover {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-.footer-menu {
-    position: absolute;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    z-index: 20;
-    margin: auto;
-    top: 80%;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-    justify-content: center;
-}
-
-.footer-menu .menu {
-    width: 800px;
-    height: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    list-style: none;
-    border-top: 2px solid whitesmoke;
-    margin: 50px 0;
-}
-
-.footer-menu .menu-item {
-    height: 100%;
-}
-
-.footer-menu .menu-link {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 10px 0px;
-    padding: 10px 20px;
-    color: whitesmoke;
-    text-decoration: none;
-    position: relative;
-    transition: color .7s ease;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
-}
-
-@media screen and (max-height: 400px) {
-    .nome{
-        top: 40%;
-    }    
-    .autor {
-                font-size: 60px;
-          }
-    .job {
-        font-size: 20px;
+    @import url('https://fonts.googleapis.com/css?family=Srisakdi:400,700');
+    @import url('https://fonts.googleapis.com/css?family=Pacifico');
+    @import url('https://fonts.googleapis.com/css?family=Lato: 400,700');
+     ::after,
+     ::before,
+    * {
+        box-sizing: border-box;
     }
     
-    .footer-menu .menu {
-        margin: 0;
+    body {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        overflow: hidden;
     }
+    
+    .principal {
+        width: 100%;
+        height: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .img-bg {
+        background-image: linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
+        background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(105, 173, 212)), color-stop(0.84, rgb(23, 82, 145)));
+        filter: blur(24px);
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .nome {
+        color: rgb(230, 230, 230);
+        margin: 0px auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+    
+    .autor {
+        font-size: 72px;
+        font-family: 'Pacifico', cursive;
+        font-weight: 400;
+        text-align: center;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+        vertical-align: center;
+        margin-bottom: -10px;
+    }
+    
+    .job {
+        font-size: 28px;
+        font-family: 'Lato';
+        text-align: center;
+        text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.3);
+    }
+    
+    .sociais {
+        width: 100%;
+        flex-flow: row;
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        justify-content: center;
+        height: 30px;
+        margin-bottom: -20px;
+    }
+    
+    .sociais-link img {
+        margin: 0px 40px;
+        transition: background 0.4s ease;
+        transition: border-radius 0.5s ease;
+    }
+    
+    .sociais-link img:hover {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+    
+    .header-menu {
+        position: absolute;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        z-index: 20;
+        margin: 0 auto;
+        top: 0%;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Lato", sans-serif;
+        justify-content: center;
+    }
+    
+    .menu {
+        min-width: 60%;
+        height: 20px;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        list-style: none;
+        border-bottom: 2px solid whitesmoke;
+        padding-bottom: 30px;
+    }
+    
+    .menu-item {
+        flex: 1;
+        text-align: center;
+        margin-left: -20px;
+    }
+    
+    .menu-link {
+        color: whitesmoke;
+        text-decoration: none;
+        transition: color .7s ease;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+    }
+    
+    @media screen and (max-width: 720px) {
+        .nome {
+            top: 55%;
         }
-
-.footer-menu .menu-link:hover {
-    color: darkgrey;
-}
-
+        .autor {
+            font-size: 40px;
+        }
+        .job {
+            font-size: 17px;
+        }
+    }
+    
+    @media screen and (max-width: 420px) {
+        .menu {
+            max-width: 80%;
+            margin: 10px 0px;
+        }
+        .menu-item {
+            margin: 0px 20px;
+        }
+        .menu-item:nth-child(1) {
+            margin-left: -20px;
+        }
+        .sociais-link img {
+            margin: 0px 20px;
+        }
+    }
+    
+    .menu-link:hover {
+        color: darkgrey;
+    }
