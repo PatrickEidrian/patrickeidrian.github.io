@@ -190,17 +190,12 @@
             .job {
                 font-size: 17px;
             }
-            .container {
-                margin-top: -50px;
-            }
             .texto-sobre {
-                width: 40%;
+                width: 60%;
+                margin-top: -100px;
             }
             .texto-sobre p {
                 font-size: 12px;
-            }
-            .foto-pefil {
-                width: 40%;
             }
             .foto-perfil img {
                 width: 200px;
@@ -225,21 +220,27 @@
                 bottom: 60px;
             }
             .container {
-                margin-top: -20px;
-                height: 99vh;
-                margin-bottom: 0px;
+                height: 98vh;
+                flex-direction: column-reverse;
+                width: 100vw;
+                margin-left: -6px;
             }
-            .foto-pefil {
-                width: 45%;
-            }
-            .foto-perfil img {
-                width: 250px;
+            .foto-perfil {
+                margin-top: -110px;
             }
             .texto-sobre {
-                width: 30%;
+                width: 90%;
                 margin-left: 10px;
+                margin-top: 10px;
             }
             .texto-sobre p {
+                font-size: 12px;
+            }
+            .botao {
+                width: 99vw;
+                margin-top: -10px;
+            }
+            .botao a {
                 font-size: 12px;
             }
         }
