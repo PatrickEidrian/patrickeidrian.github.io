@@ -160,6 +160,26 @@
             display: block;
         }
         
+        .botao {
+            background-color: #414141;
+            width: 200px;
+            height: 50px;
+            border-radius: 8px;
+            border: none;
+            padding: 0px;
+        }
+        
+        .botao:hover {
+            background-color: #222222;
+        }
+        
+        .botao a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 0;
+        }
+        
         @media screen and (max-width: 720px) {
             .nome {
                 top: 55%;
