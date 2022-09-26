@@ -8,20 +8,10 @@
         }
         
         body {
-            width: 90vw;
-            height: 99vh;
-        }
-        
-        .container {
             width: 99vw;
-            overflow: hidden;
-            flex-flow: row;
-            display: flex;
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            height: 98vh;
-            background-color: #f5f5f5;
+            height: 99vh;
+            background-color: #ffffff;
+            color: #222222;
         }
         
         .img-bg {
@@ -123,18 +113,30 @@
             border-radius: 10px;
         }
         
-        .foto-pefil {
-            width: 48%;
+        #sobre {
+            background-color: #f5f5f5;
+            width: 100vw;
+            display: inline-block;
+            margin: 0;
+        }
+        
+        .container {
+            width: 95%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .foto-perfil {
+            width: 55%;
+            margin-left: 80px;
         }
         
         .foto {
-            width: 75%;
-            float: right;
+            max-width: 75%;
         }
         
         .texto-sobre {
-            width: 35%;
-            margin-right: 25px;
+            margin-left: 70px;
         }
         
         .texto-sobre h5 {
@@ -158,6 +160,7 @@
             font-weight: 400;
             margin: 0 0 15px;
             display: block;
+            width: 60%;
         }
         
         .botao {
@@ -180,6 +183,50 @@
             display: inline-block;
             text-transform: uppercase;
             letter-spacing: 2px;
+        }
+        
+        .titulo {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        
+        .linha-1 {
+            width: 8%;
+            height: 3px;
+            background-color: #cccccc;
+            margin-top: -15px;
+            border: none;
+        }
+        
+        .linha-2 {
+            width: 3%;
+            height: 3px;
+            background-color: #cccccc;
+            border: none;
+            margin-top: -5px;
+        }
+        
+        .grid-container {
+            height: 80vh;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 49% 49%;
+            width: 99vw;
+            align-items: center;
+        }
+        
+        .grid-container>div {
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .dibsmart {
+            filter: invert(1);
+        }
+        
+        .grid-container img {
+            height: 80px;
         }
         
         @media screen and (max-width: 720px) {
@@ -205,7 +252,7 @@
             }
         }
         
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 700px) {
             .menu {
                 max-width: 80%;
             }
@@ -222,24 +269,28 @@
                 bottom: 60px;
             }
             .container {
-                height: 98vh;
                 flex-direction: column-reverse;
                 width: 100vw;
-                margin-left: -6px;
             }
             .foto-perfil {
-                margin-top: -110px;
+                margin-right: 50px;
+                margin-top: 60px;
+            }
+            .texto-sobre h1,
+            .texto-sobre h5 {
+                text-align: center;
             }
             .texto-sobre {
                 width: 90%;
-                margin-left: 10px;
-                margin-top: 10px;
+                margin-left: 15px;
+                margin-top: 2px;
             }
             .texto-sobre p {
                 font-size: 12px;
+                width: 100%;
             }
             .botao {
-                width: 99vw;
+                width: 90%;
                 margin-top: -10px;
             }
             .botao a {
