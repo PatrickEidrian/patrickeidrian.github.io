@@ -49,7 +49,7 @@ function neve() {
             floco.velX += Math.cos(floco.step += .05) * floco.stepSize;
         }
 
-        ctx.fillStyle = "rgba(255,255,255," + floco.opacity + ")";
+        ctx.fillStyle = "rgba(30, 144, 255," + floco.opacity/2 + ")";
         floco.y += floco.velY;
         floco.x += floco.velX;
             
