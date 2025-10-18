@@ -1,324 +1,416 @@
-        @import url('https://fonts.googleapis.com/css?family=Srisakdi:400,700');
-        @import url('https://fonts.googleapis.com/css?family=Pacifico');
-        @import url('https://fonts.googleapis.com/css?family=Lato: 400,700');
-         ::after,
-         ::before,
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            width: 99vw;
-            height: 99vh;
-            background-color: #ffffff;
-            color: #222222;
-        }
-        
-        .img-bg {
-            background-image: linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
-            background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(105, 173, 212)), color-stop(0.84, rgb(23, 82, 145)));
-            filter: blur(24px);
-            z-index: -1;
-            width: 98vw;
-            height: 100%;
-            position: absolute;
-            bottom: 0;
-        }
-        
-        .header-menu {
-            position: absolute;
-            display: flex;
-            flex-flow: row wrap;
-            width: 99%;
-            z-index: 20;
-            top: 0%;
-            font-size: 18px;
-            font-weight: 700;
-            font-family: "Lato", sans-serif;
-            justify-content: center;
-        }
-        
-        .menu {
-            min-width: 60%;
-            height: 20px;
-            display: flex;
-            flex-flow: row;
-            justify-content: center;
-            list-style: none;
-            border-bottom: 2px solid whitesmoke;
-            padding-bottom: 30px;
-        }
-        
-        .menu-item {
-            flex: 1;
-            text-align: center;
-            margin-left: -20px;
-        }
-        
-        .menu-link {
-            color: whitesmoke;
-            text-decoration: none;
-            transition: color .7s ease;
-            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
-        }
-        
-        .menu-link:hover {
-            color: darkgrey;
-        }
-        
-        .nome {
-            color: rgb(230, 230, 230);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -49%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .autor {
-            font-size: 72px;
-            font-family: 'Pacifico', cursive;
-            font-weight: 400px;
-            text-align: center;
-            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
-            margin-bottom: -10px;
-        }
-        
-        .job {
-            font-size: 28px;
-            font-family: 'Lato';
-            text-align: center;
-            text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.3);
-        }
-        
-        .sociais {
-            width: 99%;
-            flex-flow: row;
-            display: flex;
-            position: absolute;
-            justify-content: center;
-            height: 30px;
-            margin-bottom: -20px;
-            bottom: 50px;
-        }
-        
-        .sociais-link img {
-            margin: 0px 40px;
-            transition: background 0.4s ease;
-            transition: border-radius 0.5s ease;
-        }
-        
-        .sociais-link img:hover {
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-        }
-        
-        #sobre {
-            background-color: #f5f5f5;
-            width: 100vw;
-            display: inline-block;
-            margin: 0;
-        }
-        
-        .container {
-            width: 95%;
-            display: flex;
-            align-items: center;
-        }
-        
-        .foto-perfil {
-            width: 55%;
-            margin-left: 80px;
-        }
-        
-        .foto {
-            max-width: 75%;
-        }
-        
-        .texto-sobre {
-            margin-left: 70px;
-        }
-        
-        .texto-sobre h5 {
-            color: #919191;
-            letter-spacing: 1px;
-            margin: 0 0 15px;
-            font-weight: 700;
-        }
-        
-        .texto-sobre h1 {
-            color: #414141;
-            font-size: 44px;
-            line-height: 28px;
-            margin: 0 0 15px;
-        }
-        
-        .texto-sobre>p {
-            line-height: 28px;
-            font-size: 16px;
-            color: #6a6a6a;
-            font-weight: 400;
-            margin: 0 0 15px;
-            display: block;
-            width: 60%;
-        }
-        
-        .botao {
-            background-color: #414141;
-            width: 60%;
-            height: 50px;
-            border-radius: 8px;
-            border: none;
-            margin-bottom: 20px;
-        }
-        
-        .botao:hover {
-            background-color: #222222;
-        }
-        
-        .botao a,
-        .sobe-home a {
-            color: #f5f5f5;
-            text-decoration: none;
-            font-weight: 700;
-            width: 100%;
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .titulo {
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 400;
-            margin-top: 50px;
-        }
-        
-        .linha-1 {
-            width: 8%;
-            height: 3px;
-            background-color: #cccccc;
-            margin-top: -15px;
-            border: none;
-        }
-        
-        .linha-2 {
-            width: 3%;
-            height: 3px;
-            background-color: #cccccc;
-            border: none;
-            margin-top: -5px;
-        }
-        
-        .grid-container {
-            height: 80vh;
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: 49% 49%;
-            width: 99vw;
-            align-items: center;
-        }
-        
-        .grid-container>div {
-            padding: 20px 0;
-            text-align: center;
-        }
-        
-        .dibsmart {
-            filter: invert(1);
-        }
-        
-        .grid-container img {
-            height: 80px;
-        }
-        
-        .sobe-home {
-            position: fixed;
-            bottom: 0px;
-            right: 10px;
-            display: block;
-        }
-        
-        .sobe-home img {
-            width: 80px;
-        }
-        
-        @media screen and (max-width: 720px) {
-            .nome {
-                top: 55%;
-            }
-            .autor {
-                font-size: 40px;
-            }
-            .job {
-                font-size: 17px;
-            }
-            .texto-sobre {
-                width: 60%;
-                margin-top: -100px;
-            }
-            .texto-sobre p {
-                font-size: 12px;
-            }
-            .foto-perfil img {
-                width: 200px;
-                margin-top: -50px;
-            }
-        }
-        
-        @media screen and (max-width: 700px) {
-            .menu {
-                max-width: 80%;
-            }
-            .menu-item {
-                margin: 0px 20px;
-            }
-            .menu-item:nth-child(1) {
-                margin-left: -20px;
-            }
-            .sociais-link img {
-                margin: 10px 20px;
-            }
-            .sociais {
-                bottom: 60px;
-            }
-            .container {
-                flex-direction: column-reverse;
-                width: 100vw;
-            }
-            .foto-perfil {
-                margin-right: 50px;
-                margin-top: 60px;
-            }
-            .texto-sobre h1,
-            .texto-sobre h5 {
-                text-align: center;
-            }
-            .texto-sobre {
-                width: 90%;
-                margin-left: 15px;
-                margin-top: 2px;
-            }
-            .texto-sobre p {
-                font-size: 12px;
-                width: 100%;
-            }
-            .botao {
-                width: 90%;
-                margin-top: -10px;
-            }
-            .botao a {
-                font-size: 12px;
-            }
-            #projetos {
-                height: 100vh;
-            }
-            .grid-container {
-                grid-template-columns: 49% 49%;
-                grid-template-rows: 33.33% 33.33% 33.33%;
-            }
-            .grid-container img {
-                height: 50px;
-                width: 150px;
-            }
-        }
+/* Importação de Fontes e Reset Básico */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #1a1a1a; /* Fundo Escuro Principal */
+    --secondary-color: #ffffff; /* Texto Principal Claro */
+    --accent-color: #1E90FF; /* Azul Vibrante para Destaque (DODGER BLUE) */
+    --text-muted: #aaaaaa; /* Cor de Texto Secundário */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Evita scroll horizontal indesejado */
+    min-height: 100vh;
+}
+
+/* Fundo Abstrato (Substituindo o gradiente borrado) */
+.bg-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: radial-gradient(circle at 10% 20%, rgba(30, 144, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(30, 144, 255, 0.1) 0%, transparent 50%),
+                repeating-linear-gradient(0deg, #1f1f1f, #1f1f1f 1px, transparent 1px, transparent 100px),
+                repeating-linear-gradient(90deg, #1f1f1f, #1f1f1f 1px, transparent 1px, transparent 100px);
+    background-size: 100% 100%, 100% 100%, 100px 100px, 100px 100px;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(26, 26, 26, 0.95); /* Fundo semi-transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    max-width: 800px;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.menu-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu-link:hover {
+    color: var(--accent-color);
+}
+
+.menu-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Seção Home (Início) */
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 100px; /* Espaço para o cabeçalho fixo */
+}
+
+/* Efeito de partículas (Canvas) */
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3; /* Mais sutil que a neve */
+}
+
+/* Nome e Título */
+.nome {
+    text-align: center;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.greeting {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--text-muted);
+    margin-bottom: -10px;
+}
+
+.autor {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.job {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+}
+
+/* Ícones Sociais */
+.sociais {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.sociais-link img {
+    height: 40px;
+    width: 40px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.sociais-link img:hover {
+    filter: drop-shadow(0 0 10px var(--accent-color));
+    transform: scale(1.1);
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: #121212; /* Cor de fundo ligeiramente diferente para contraste */
+    padding: 80px 20px;
+}
+
+.container-sobre {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.foto-perfil {
+    flex-shrink: 0;
+}
+
+.foto {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+}
+
+.texto-sobre h2 {
+    color: var(--accent-color);
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.texto-sobre p.texto {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 500px;
+}
+
+.texto-sobre p.texto strong {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.botao {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.botao:hover {
+    background-color: #1565C0; /* Azul um pouco mais escuro */
+    transform: translateY(-2px);
+}
+
+/* Seção de Projetos */
+.projects-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.grid-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.item-projeto {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(30, 144, 255, 0.3);
+}
+
+.item-projeto a {
+    display: block;
+}
+
+.item-projeto img {
+    height: 80px;
+    width: auto;
+    margin-bottom: 15px;
+    filter: invert(1); /* Para ícones pretos em fundo escuro */
+    transition: filter 0.3s ease;
+}
+/* Estilo específico para a seção IA */
+#ai-projects .item-projeto img {
+    filter: none; /* Deixa os ícones coloridos ou azuis como estão */
+    height: 100px;
+}
+#ai-projects .project-tech {
+    color: var(--accent-color);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.project-name {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Rodapé */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #333333;
+    background-color: #121212;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+.sobe-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 50;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.sobe-home:hover {
+    background-color: #1565C0;
+}
+
+.sobe-home img {
+    width: 30px;
+    filter: invert(1); /* Seta branca no fundo azul */
+}
+
+/* Responsividade Aprimorada */
+@media screen and (max-width: 900px) {
+    .container-sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        margin-left: 0;
+        order: -1; /* Move a foto para cima no layout de coluna */
+    }
+
+    .texto-sobre {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .texto-sobre p.texto {
+        max-width: 100%;
+    }
+
+    .texto-sobre h2 {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu {
+        flex-wrap: wrap;
+        font-size: 14px;
+        gap: 10px;
+    }
+    
+    .menu-item {
+        margin: 0;
+        flex-basis: auto;
+    }
+
+    .autor {
+        font-size: 50px;
+    }
+
+    .job {
+        font-size: 20px;
+    }
+
+    .sociais {
+        gap: 20px;
+    }
+    
+    .sociais-link img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Coluna única em telas menores */
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .botao {
+        width: 100%;
+    }
+
+    .botao a {
+        padding: 0;
+    }
+}
