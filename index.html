@@ -14,21 +14,21 @@
       type="image/png"
       href="./fotos/LOGO-FAV.png"
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#1a1a1a" />
   </head>
   <body>
-    <div class="img-bg"></div>
     <header>
       <nav class="header-menu">
+        <a href="#home" class="logo">Patrick Eidrian</a>
         <button class="header-menu__button">
           <img src="./fotos/menu.png" alt="menu" />
         </button>
         <ul class="menu">
           <li class="menu-item">
-            <a class="menu-link" href="#projetos"> Projetos </a>
+            <a class="menu-link" href="#projetos">Projetos</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#sobre"> Sobre </a>
+            <a class="menu-link" href="#sobre">Sobre</a>
           </li>
           <li class="menu-item">
             <a
@@ -37,7 +37,7 @@
               href="https://raw.githubusercontent.com/PatrickEidrian/patrickeidrian.github.io/master/patrick-eidrian.pdf"
               download="patrick-eidrian.pdf"
             >
-              Curriculo
+              Currículo
             </a>
           </li>
         </ul>
@@ -45,6 +45,10 @@
     </header>
 
     <main id="home">
+      <div class="nome">
+        <p class="autor">Patrick Eidrian</p>
+        <p class="job">Front-end Developer</p>
+      </div>
       <div class="sociais">
         <a
           class="sociais-link"
@@ -79,13 +83,6 @@
             alt="e-mail"
         /></a>
       </div>
-
-      <div class="nome">
-        <p class="autor">Patrick Eidrian</p>
-        <p class="job">Front-end</p>
-      </div>
-
-      <canvas id="canvas"></canvas>
     </main>
 
     <section id="sobre">
@@ -96,53 +93,49 @@
         <div class="texto-sobre">
           <h5>Oi, meu nome é</h5>
           <h1>Patrick Eidrian</h1>
-          <p class="texto">
+          <p>
             Com um pouco mais de 4 anos na área de desenvolvimento Front-end como
-            freelancer, desenvovi várias habilidades necessárias. Durante esses
-            anos foram desenvolvidos vários projetos que você vera a seguir
+            freelancer, desenvolvi várias habilidades necessárias. Durante esses
+            anos foram desenvolvidos vários projetos que você verá a seguir.
           </p>
-          <button class="botao">
-            <a href="#projetos">Conheça os Projetos</a>
-          </button>
+          <a href="#projetos" class="botao">Conheça os Projetos</a>
         </div>
       </div>
     </section>
 
     <section id="projetos">
       <h2 class="titulo">Projetos</h2>
-      <hr class="linha-1" />
-      <hr class="linha-2" />
       <div class="grid-container">
         <div class="item-projeto">
           <a href="https://dibsmart.com.br" target="_blank"
             ><img class="dibsmart" src="./fotos/dibsmart.png"
           /></a>
         </div>
-        <div class="item-projeto site-seguraco">
+        <div class="item-projeto">
           <a href="https://seguracoepi.com.br/" target="_blank"
             ><img src="./fotos/seguraco.png"
           /></a>
         </div>
-        <div class="item-projeto jogo-velha">
+        <div class="item-projeto">
           <a href="https://codepen.io/patrickeidrian/pen/NoOYPv" target="_blank"
             ><img src="./fotos/jogo-velha.png"
           /></a>
         </div>
-        <div class="item-projeto seguraco">
+        <div class="item-projeto">
           <a
             href="https://calculadora-de-epi1.glideapp.io/"
             target="_blank"
             ><img src="./fotos/seguraco.png"
           /></a>
         </div>
-        <div class="item-projeto calha">
+        <div class="item-projeto">
           <a
             href="https://codepen.io/patrickeidrian/pen/PozWavQ"
             target="_blank"
             ><img src="./fotos/calha.png"
           /></a>
         </div>
-        <div class="item-projeto calculadora">
+        <div class="item-projeto">
           <a
             href="https://codepen.io/patrickeidrian/pen/yZRjbL"
             target="_blank"
@@ -163,7 +156,6 @@
           >
             <circle
               class="progress-ring__circle"
-              stroke="white"
               stroke-width="6"
               fill="transparent"
               r="54"
@@ -173,7 +165,6 @@
             <path
               class="arrow"
               d="M60,30 L60,90 M45,50 L60,30 L75,50"
-              stroke="white"
               stroke-width="6"
               fill="none"
               stroke-linecap="round"
@@ -183,8 +174,8 @@
         </a>
       </div>
     </footer>
-    <script src="neve.js"></script>
     <script src="menu.js"></script>
     <script src="scroll.js"></script>
+    <script src="animations.js"></script>
   </body>
 </html>
