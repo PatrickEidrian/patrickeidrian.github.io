@@ -1,185 +1,163 @@
- <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="pt-BR">
-
-
-<head>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=devide-height">
-
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=devide-height"
+    />
     <title>Portifólio On-line Patrick</title>
-
-    <link rel="stylesheet" href="styles.css"></link>
-
-    <link rel="icon" syzes="16x16" type="image/png" href="./fotos/LOGO-FAV.png">
-
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      syzes="16x16"
+      type="image/png"
+      href="./fotos/LOGO-FAV.png"
+    />
     <meta name="theme-color" content="#ffffff" />
-
-
-</head>
-
-
-<body>
-
-    <div class="img-bg">
-
-    </div>
-
+  </head>
+  <body>
+    <div class="img-bg"></div>
     <header>
-
-        <nav class="header-menu">
-
-            <ul class="menu">
-
-                <li class="menu-item"><a class="menu-link" href="#projetos"> Projetos </a></li>
-
-                <li class="menu-item"><a class="menu-link" href="#sobre"> Sobre </a></li>
-
-                <li class="menu-item"><a class="menu-link" target="_blank" href="https://raw.githubusercontent.com/PatrickEidrian/patrickeidrian.github.io/master/patrick-eidrian.pdf" download="patrick-eidrian.pdf"> Curriculo </a></li>
-
-            </ul>
-
-        </nav>
-
+      <nav class="header-menu">
+        <button class="header-menu__button">
+          <img src="./fotos/menu.png" alt="menu" />
+        </button>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="#projetos"> Projetos </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#sobre"> Sobre </a>
+          </li>
+          <li class="menu-item">
+            <a
+              class="menu-link"
+              target="_blank"
+              href="https://raw.githubusercontent.com/PatrickEidrian/patrickeidrian.github.io/master/patrick-eidrian.pdf"
+              download="patrick-eidrian.pdf"
+            >
+              Curriculo
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-
-
     <main id="home">
+      <div class="sociais">
+        <a
+          class="sociais-link"
+          href="https://github.com/PatrickEidrian"
+          target="_blank"
+          ><img
+            src="https://img.icons8.com/ios/50/ffffff/github-filled.png"
+            alt="icone-github"
+        /></a>
+        <a
+          class="sociais-link"
+          href="https://www.linkedin.com/in/patrick-eidrian-643340162/"
+          target="_blank"
+          ><img
+            src="https://img.icons8.com/ios/50/ffffff/linkedin.png"
+            alt="icone-linkedin"
+        /></a>
+        <a
+          class="sociais-link"
+          href="https://codepen.io/patrickeidrian"
+          target="_blank"
+          ><img
+            src="https://img.icons8.com/ios/50/ffffff/codepen-filled.png"
+            alt="codepen"
+        /></a>
+        <a
+          class="sociais-link"
+          href="mailto:patrickeidrian1@gmail.com"
+          target="_blank"
+          ><img
+            src="https://img.icons8.com/ios/50/ffffff/gmail-login.png"
+            alt="e-mail"
+        /></a>
+      </div>
 
+      <div class="nome">
+        <p class="autor">Patrick Eidrian</p>
+        <p class="job">Front-end</p>
+      </div>
 
-        <div class="sociais">
-
-            <a class="sociais-link" href="https://github.com/PatrickEidrian" target="_blank"><img src="https://img.icons8.com/ios/50/ffffff/github-filled.png" alt="icone-github"></a>
-
-            <a class="sociais-link" href="https://www.linkedin.com/in/patrick-eidrian-643340162/" target="_blank"><img src="https://img.icons8.com/ios/50/ffffff/linkedin.png" alt="icone-linkedin"></a>
-
-            <a class="sociais-link" href="https://codepen.io/patrickeidrian" target="_blank"><img src="https://img.icons8.com/ios/50/ffffff/codepen-filled.png" alt="codepen"></a>
-
-            <a class="sociais-link" href="mailto:patrickeidrian1@gmail.com" target="_blank"><img src="https://img.icons8.com/ios/50/ffffff/gmail-login.png" alt="e-mail"></a>
-
-        </div>
-
-
-        <div class="nome">
-
-            <p class="autor">Patrick Eidrian</p>
-
-            <p class="job"> Front-end</p>
-
-        </div>
-
-        <canvas id="canvas"></canvas>
-
-
-        <!--<iframe src="house-music.mp3" autoplay loop style="display: none;"></iframe>-->
-
-
+      <canvas id="canvas"></canvas>
     </main>
 
     <section id="sobre">
-
-        <div class="container">
-
-
-            <div class="texto-sobre">
-
-                <h5>Oi, meu nome é</h5>
-
-                <h1>Patrick Eidrian</h1>
-
-                <p class="texto">Com um pouco mais de 4 anos na área de desenvolvimento Front-end como freelancer, desenvovi várias habilidades necessárias. Durante esses anos foram desenvolvidos vários projetos que você vera a seguir</p>
-
-                <button class="botao"><a href="#projetos">Conheça os Projetos</a></button>
-
-            </div>
-
-            <div class="foto-perfil">
-
-                <img class="foto" src="./fotos/foto-site-2.png" />
-
-            </div>
-
+      <div class="container">
+        <div class="foto-perfil">
+          <img class="foto" src="./fotos/foto-site-2.png" />
         </div>
-
+        <div class="texto-sobre">
+          <h5>Oi, meu nome é</h5>
+          <h1>Patrick Eidrian</h1>
+          <p class="texto">
+            Com um pouco mais de 4 anos na área de desenvolvimento Front-end como
+            freelancer, desenvovi várias habilidades necessárias. Durante esses
+            anos foram desenvolvidos vários projetos que você vera a seguir
+          </p>
+          <button class="botao">
+            <a href="#projetos">Conheça os Projetos</a>
+          </button>
+        </div>
+      </div>
     </section>
-
 
     <section id="projetos">
-
-        <h2 class="titulo">Projetos</h2>
-
-        <hr class="linha-1">
-
-        <hr class="linha-2">
-
-        <div class="grid-container">
-
-            <div class="item-projeto">
-
-                <a href="https://dibsmart.com.br" target="_blank"><img class="dibsmart" src="./fotos/dibsmart.png" /></a>
-
-            </div>
-
-            <div class="item-projeto site-seguraco ">
-
-                <a href="https://seguracoepi.com.br/" target="_blank"><img src="./fotos/seguraco.png" /></a>
-
-
-            </div>
-
-            <div class="item-projeto jogo-velha">
-
-                <a href="https://codepen.io/patrickeidrian/pen/NoOYPv" target="_blank"><img src="./fotos/jogo-velha.png" /></a>
-
-
-            </div>
-
-            <div class="item-projeto seguraco">
-
-                <a href="https://calculadora-de-epi1.glideapp.io/" target="_blank"><img src="./fotos/seguraco.png" /></a>
-
-
-            </div>
-
-            <div class="item-projeto calha">
-
-                <a href="https://codepen.io/patrickeidrian/pen/PozWavQ" target="_blank"><img src="./fotos/calha.png" /></a>
-
-
-
-            </div>
-
-            <div class="item-projeto calculadora">
-
-                <a href="https://codepen.io/patrickeidrian/pen/yZRjbL" target="_blank"><img src="./fotos/calculadora.png" /></a>
-
-
-
-            </div>
-
+      <h2 class="titulo">Projetos</h2>
+      <hr class="linha-1" />
+      <hr class="linha-2" />
+      <div class="grid-container">
+        <div class="item-projeto">
+          <a href="https://dibsmart.com.br" target="_blank"
+            ><img class="dibsmart" src="./fotos/dibsmart.png"
+          /></a>
         </div>
-
+        <div class="item-projeto site-seguraco">
+          <a href="https://seguracoepi.com.br/" target="_blank"
+            ><img src="./fotos/seguraco.png"
+          /></a>
+        </div>
+        <div class="item-projeto jogo-velha">
+          <a href="https://codepen.io/patrickeidrian/pen/NoOYPv" target="_blank"
+            ><img src="./fotos/jogo-velha.png"
+          /></a>
+        </div>
+        <div class="item-projeto seguraco">
+          <a
+            href="https://calculadora-de-epi1.glideapp.io/"
+            target="_blank"
+            ><img src="./fotos/seguraco.png"
+          /></a>
+        </div>
+        <div class="item-projeto calha">
+          <a
+            href="https://codepen.io/patrickeidrian/pen/PozWavQ"
+            target="_blank"
+            ><img src="./fotos/calha.png"
+          /></a>
+        </div>
+        <div class="item-projeto calculadora">
+          <a
+            href="https://codepen.io/patrickeidrian/pen/yZRjbL"
+            target="_blank"
+            ><img src="./fotos/calculadora.png"
+          /></a>
+        </div>
+      </div>
     </section>
 
-
     <footer>
-
-        <div class="sobe-home">
-
-            <a href="#home"><img src="./fotos/suba.png" /></a>
-
-        </div>
-
+      <div class="sobe-home">
+        <a href="#home"><img src="./fotos/suba.png" /></a>
+      </div>
     </footer>
-
-    <script src="neve.js">
-
-    </script>
-
-</body>
-
-
-</html> 
+    <script src="neve.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
