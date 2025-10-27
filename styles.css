@@ -59,16 +59,31 @@ header {
 }
 
 .header-menu__button {
-  display: none;
+  display: block;
+  z-index: 101;
   background: none;
   border: none;
   cursor: pointer;
 }
 
 .menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  transition: right 0.3s ease-in-out;
   list-style: none;
   display: flex;
   gap: 2rem;
+}
+
+.menu.active {
+  right: 0;
 }
 
 .menu-link {
@@ -90,6 +105,7 @@ main#home {
   min-height: 100vh;
   text-align: center;
   padding-top: 80px;
+  background: linear-gradient(135deg, var(--primary-color) 50%, var(--accent-color) 50%);
 }
 
 .nome {
@@ -98,13 +114,13 @@ main#home {
 
 .autor {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--heading-color);
 }
 
 .job {
-  font-size: 1rem;
-  color: var(--accent-color);
+  font-size: 1.2rem;
+  color: var(--heading-color);
 }
 
 .sociais {
@@ -114,7 +130,7 @@ main#home {
 
 .sociais-link img {
   width: 30px;
-  filter: grayscale(1) brightness(2);
+  filter: grayscale(1) brightness(2) drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
   transition: filter 0.3s, transform 0.3s;
 }
 
@@ -142,6 +158,7 @@ section.visible {
   display: flex;
   align-items: center;
   gap: 4rem;
+  flex-direction: column-reverse;
 }
 
 .foto-perfil {
@@ -153,6 +170,7 @@ section.visible {
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 50% 70%;
   border: 4px solid var(--accent-color);
 }
 
@@ -205,20 +223,24 @@ section.visible {
 
 .item-projeto {
   background-color: var(--secondary-color);
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .item-projeto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.12);
 }
 
 .item-projeto img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .sobe-home {
@@ -233,38 +255,29 @@ section.visible {
   stroke: var(--accent-color);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   .header-menu__button {
-    display: block;
-    z-index: 101;
+    display: none;
   }
 
   .menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-    transition: right 0.3s ease-in-out;
-  }
-
-  .menu.active {
-    right: 0;
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    transition: none;
   }
 
   .autor {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .job {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .container {
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
 }
