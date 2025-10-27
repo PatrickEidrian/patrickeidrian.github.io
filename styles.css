@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap");
 
 :root {
-  --primary-color: #1a1a1a;
-  --secondary-color: #2c2c2c;
-  --accent-color: #6c63ff;
-  --text-color: #e0e0e0;
-  --heading-color: #ffffff;
+  --primary-color: #4B0082; /* Indigo */
+  --secondary-color: #8A2BE2; /* BlueViolet */
+  --accent-color: #00FF7F; /* SpringGreen */
+  --text-color: #E6E6FA; /* Lavender */
+  --heading-color: #FFFFFF; /* White */
 }
 
 *,
@@ -98,12 +98,12 @@ main#home {
 
 .autor {
   font-family: "Poppins", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--heading-color);
 }
 
 .job {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--accent-color);
 }
 
@@ -125,6 +125,7 @@ main#home {
 
 section {
   padding: 6rem 1rem;
+  padding-top: 80px;
   max-width: 1200px;
   margin: 0 auto;
   opacity: 0;
@@ -166,6 +167,11 @@ section.visible {
   font-size: 2.5rem;
   color: var(--heading-color);
   margin-bottom: 1rem;
+}
+
+.texto-sobre p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .botao {
