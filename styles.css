@@ -267,13 +267,28 @@ body {
   z-index: 10;
 }
 
-.sobe-home img {
-  width: 60px;
+.sobe-home a {
+  display: block;
+}
+
+.progress-ring {
   transition: transform 0.3s ease;
 }
 
-.sobe-home img:hover {
+.progress-ring:hover {
   transform: scale(1.1);
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.3s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: var(--quinary-color);
+}
+
+.arrow {
+  stroke: var(--quinary-color);
+  transition: stroke 0.3s;
 }
 
 @media screen and (min-width: 720px) {
